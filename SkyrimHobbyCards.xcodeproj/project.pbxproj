@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		268F53812D11C31C00C67F42 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F537E2D11C31C00C67F42 /* CardView.swift */; };
+		268F53822D11C31C00C67F42 /* SkyrimHobbyCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F537F2D11C31C00C67F42 /* SkyrimHobbyCardsApp.swift */; };
+		268F53832D11C31C00C67F42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268F537B2D11C31C00C67F42 /* Preview Assets.xcassets */; };
+		268F53842D11C31C00C67F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268F537D2D11C31C00C67F42 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		268F536A2D11C23700C67F42 /* SkyrimHobbyCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyrimHobbyCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		268F537B2D11C31C00C67F42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		268F537D2D11C31C00C67F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		268F537E2D11C31C00C67F42 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		268F537F2D11C31C00C67F42 /* SkyrimHobbyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyrimHobbyCardsApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		268F536C2D11C23700C67F42 /* SkyrimHobbyCards */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SkyrimHobbyCards;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		268F53672D11C23700C67F42 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		268F53612D11C23700C67F42 = {
 			isa = PBXGroup;
 			children = (
-				268F536C2D11C23700C67F42 /* SkyrimHobbyCards */,
+				268F53802D11C31C00C67F42 /* SkyrimHobbyCards */,
 				268F536B2D11C23700C67F42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,33 @@
 				268F536A2D11C23700C67F42 /* SkyrimHobbyCards.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		268F537C2D11C31C00C67F42 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				268F537B2D11C31C00C67F42 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		268F53802D11C31C00C67F42 /* SkyrimHobbyCards */ = {
+			isa = PBXGroup;
+			children = (
+				268F53852D11C35700C67F42 /* Views */,
+				268F537C2D11C31C00C67F42 /* Preview Content */,
+				268F537D2D11C31C00C67F42 /* Assets.xcassets */,
+				268F537E2D11C31C00C67F42 /* CardView.swift */,
+			);
+			path = SkyrimHobbyCards;
+			sourceTree = "<group>";
+		};
+		268F53852D11C35700C67F42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				268F537F2D11C31C00C67F42 /* SkyrimHobbyCardsApp.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +89,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				268F536C2D11C23700C67F42 /* SkyrimHobbyCards */,
 			);
 			name = SkyrimHobbyCards;
 			packageProductDependencies = (
@@ -109,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268F53832D11C31C00C67F42 /* Preview Assets.xcassets in Resources */,
+				268F53842D11C31C00C67F42 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268F53812D11C31C00C67F42 /* CardView.swift in Sources */,
+				268F53822D11C31C00C67F42 /* SkyrimHobbyCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
