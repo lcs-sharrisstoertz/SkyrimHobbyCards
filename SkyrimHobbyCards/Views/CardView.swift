@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct CardView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        
+        // Background
+        Color(.darkBlue)
+            .overlay(alignment: .center) {
+                    LinearGradient (colors: [.darkGray, .gray], startPoint: .top, endPoint: .bottom)
+                        .frame(width: 350,
+                               height: 725)
+            }
+        
+        //
     }
 }
 
