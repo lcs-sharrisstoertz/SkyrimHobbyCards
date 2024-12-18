@@ -26,7 +26,7 @@ struct Card: Identifiable {
 // Create instance of the structure
 
 let brynjolf = Card(background: "BlueBackground", image: "Brynjolf", name: "Brynjolf", race: "Nord", quests1: "A Chance Arrangement", quests2: "Thieves Guild Questline", quests3: "Under New Management", locations1: "Riften", locations2: "The Ragged Flagon", locations3: "", symbol: "ThievesGuildSymbol")
-let Riverwood = Card(background: "YellowBackground", image: "Riverwood", name: "Riverwood", race: "Whiterun", quests1: "The Golden Claw", quests2: "A Lovely Letter", quests3: "A Blade In The Dark", locations1: "Sleeping Giant Inn", locations2: "Riverwood Trader", locations3: "", symbol: "Village")
+let riverwood = Card(background: "YellowBackground", image: "Riverwood", name: "Riverwood", race: "Whiterun", quests1: "The Golden Claw", quests2: "A Lovely Letter", quests3: "A Blade In The Dark", locations1: "Sleeping Giant Inn", locations2: "Riverwood Trader", locations3: "", symbol: "Village")
 
 // Create an array to hold all the instances
-//let favouriteThings = [raindropsOnRoses, whiskersOnKittens, brightCopperKettles, warmWoolenMittens, brownPaperPackagesTiedUpWithString, creamColouredPonies, crispAppleStrudel]
+let cards = [brynjolf, riverwood]

@@ -9,10 +9,14 @@ import SwiftUI
 
 struct CardView: View {
     
+    // MARK: Stored Property
+    let providedCard: Card
+    
+    // MARK: Computed Properties
     var body: some View {
         
         // Background
-        Image("BlueBackground")
+        Image(providedCard.background)
             .resizable()
             .frame(width: 405, height: 905)
             .scaledToFill()
@@ -64,7 +68,7 @@ struct CardView: View {
                 Rectangle()
                     .frame(width: 325, height: 515)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 100, trailing: 0))
-                Image("Brynjolf")
+                Image(providedCard.image)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 320, height: 510, alignment: .center)
@@ -76,7 +80,7 @@ struct CardView: View {
                     .stroke(.darkGray, lineWidth: 5)
                     .frame(width: 400, height: 60)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 686, trailing: 0))
-                Text ("Brynjolf")
+                Text (providedCard.name)
                     .font(.custom("Papyrus", size: 35.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 685, trailing: 0))
                 
@@ -99,7 +103,7 @@ struct CardView: View {
                     .fill(.lightGray)
                     .frame(width: 200, height: 28)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 593, trailing: 0))
-                Text ("Nord")
+                Text (providedCard.race)
                     .font(.custom("Papyrus", size: 25.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 589, trailing: 0))
                 
@@ -112,13 +116,13 @@ struct CardView: View {
                 Text ("Quests")
                     .font(.custom("Papyrus", size: 25.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 450, leading: 0, bottom: 0, trailing: 197))
-                Text ("A Chance Arrangement")
+                Text (providedCard.quests1)
                     .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 500, leading: 0, bottom: 0, trailing: 197))
-                Text ("Thieves Guild Questline")
+                Text (providedCard.quests2)
                     .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 550, leading: 0, bottom: 0, trailing: 197))
-                Text ("Under New Management")
+                Text (providedCard.quests3)
                     .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 600, leading: 0, bottom: 0, trailing: 197))
                 
@@ -132,16 +136,19 @@ struct CardView: View {
                 Text ("Locations")
                     .font(.custom("Papyrus", size: 25.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 450, leading: 197, bottom: 0, trailing: 0))
-                Text ("Riften")
+                Text (providedCard.locations1)
                     .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 500, leading: 197, bottom: 0, trailing: 0))
-                Text ("The Ragged Flagon")
+                Text (providedCard.locations2)
                     .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 550, leading: 197, bottom: 0, trailing: 0))
+                Text (providedCard.locations3)
+                    .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 600, leading: 197, bottom: 0, trailing: 0))
                 
                 
                 // Symbol
-                Image("ThievesGuildSymbol")
+                Image(providedCard.symbol)
                     .resizable()
                     .frame(width: 125, height: 125)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 685, trailing: 265))
@@ -164,5 +171,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView()
+   CardTabView()
 }

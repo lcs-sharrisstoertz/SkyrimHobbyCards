@@ -11,7 +11,7 @@ import SwiftUI
 struct SkyrimHobbyCardsApp: App {
     var body: some Scene {
         WindowGroup {
-            CardView()
+            CardView(providedCard: brynjolf)
         }
     }
 }

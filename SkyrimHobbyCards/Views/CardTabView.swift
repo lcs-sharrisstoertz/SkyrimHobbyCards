@@ -7,15 +7,19 @@
 
 import SwiftUI
 
-//struct CardTabView: View {
+struct CardTabView: View {
     
-//    var body: some View {
-//        TabView {
-//            ForEach(cards) { currentCard in CardView(card: currentCard)}
-//        }
-//    }
-//}
+    var body: some View {
+        TabView {
+            ForEach(cards) { currentCard in CardView(providedCard: currentCard)
+                }
+        }
+        ignoresSafeArea()
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            .persistentSystemOverlays(.hidden)
+    }
+}
 
-//#Preview {
-//    CardTabView()
-//}
+#Preview {
+    CardTabView()
+}
