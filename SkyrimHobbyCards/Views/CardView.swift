@@ -24,6 +24,7 @@ struct CardView: View {
                     .frame(width: 365, height: 720)
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
                 
+                
                 // Image
                 Rectangle()
                     .frame(width: 325, height: 515)
@@ -44,6 +45,19 @@ struct CardView: View {
                     .font(.custom("Papyrus", size: 35.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 685, trailing: 0))
                 
+                // Game title
+                PointedRectangleShape()
+                    .fill(.lightGray)
+                    .stroke(.darkGray, lineWidth: 5)
+                    .frame(width: 400, height: 60)
+                    .padding(EdgeInsets(top: 750, leading: 0, bottom: 0, trailing: 0))
+                Text ("The Elder Scrolls V: ")
+                    .font(.custom("Papyrus", size: 15.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 725, leading: 0, bottom: 0, trailing: 0))
+                Text ("SKYRIM")
+                    .font(.custom("Papyrus", size: 35.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 775, leading: 0, bottom: 0, trailing: 0))
+                
                 // Race/species
                 PointedRectangleShape()
                     .stroke(.darkGray, lineWidth: 3)
@@ -58,26 +72,37 @@ struct CardView: View {
                 RoundedRectangle(cornerRadius: 20)
                     .fill(.lightGray)
                     .stroke(.darkGray, lineWidth: 5)
-                    .frame(width: 195, height: 175)
-                    .padding(EdgeInsets(top: 580, leading: 0, bottom: 0, trailing: 197))
+                    .frame(width: 195, height: 135)
+                    .padding(EdgeInsets(top: 540, leading: 0, bottom: 0, trailing: 197))
                 Text ("Quests")
                     .font(.custom("Papyrus", size: 25.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 450, leading: 0, bottom: 0, trailing: 197))
-                Text ("Quests")
-                    .font(.custom("Papyrus", size: 25.0, relativeTo: .body))
-                    .padding(EdgeInsets(top: 450, leading: 0, bottom: 0, trailing: 197))
-
+                Text ("A Chance Arrangement")
+                    .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 500, leading: 0, bottom: 0, trailing: 197))
+                Text ("Thieves Guild Questline")
+                    .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 550, leading: 0, bottom: 0, trailing: 197))
+                Text ("Under New Management")
+                    .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 600, leading: 0, bottom: 0, trailing: 197))
+                
                 
                 // Locations
                 RoundedRectangle(cornerRadius: 20)
                     .fill(.lightGray)
                     .stroke(.darkGray, lineWidth: 5)
-                    .frame(width: 195, height: 175)
-                    .padding(EdgeInsets(top: 580, leading: 197, bottom: 0, trailing: 0))
+                    .frame(width: 195, height: 135)
+                    .padding(EdgeInsets(top: 540, leading: 197, bottom: 0, trailing: 0))
                 Text ("Locations")
                     .font(.custom("Papyrus", size: 25.0, relativeTo: .body))
                     .padding(EdgeInsets(top: 450, leading: 197, bottom: 0, trailing: 0))
-
+                Text ("Riften")
+                    .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 500, leading: 197, bottom: 0, trailing: 0))
+                Text ("The Ragged Flagon")
+                    .font(.custom("Papyrus", size: 17.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 550, leading: 197, bottom: 0, trailing: 0))
                 
                 
                 // Symbol
@@ -100,6 +125,7 @@ struct CardView: View {
                     .frame(width: 82, height: 128)
                     .rotationEffect(Angle(degrees: 180))
                     .padding(EdgeInsets(top: 685, leading: 0, bottom: 0, trailing: 265))
+
                 
                 
                 
