@@ -12,6 +12,8 @@
 		268F53832D11C31C00C67F42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268F537B2D11C31C00C67F42 /* Preview Assets.xcassets */; };
 		268F53842D11C31C00C67F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268F537D2D11C31C00C67F42 /* Assets.xcassets */; };
 		268F53872D11C43D00C67F42 /* CardTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F53862D11C43D00C67F42 /* CardTabView.swift */; };
+		268F53CD2D124CB300C67F42 /* DragonSymbolShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F53CC2D124CB300C67F42 /* DragonSymbolShape.swift */; };
+		268F53CF2D124CE000C67F42 /* PointedRectangleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F53CE2D124CE000C67F42 /* PointedRectangleShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		268F537E2D11C31C00C67F42 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		268F537F2D11C31C00C67F42 /* SkyrimHobbyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyrimHobbyCardsApp.swift; sourceTree = "<group>"; };
 		268F53862D11C43D00C67F42 /* CardTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabView.swift; sourceTree = "<group>"; };
+		268F53CC2D124CB300C67F42 /* DragonSymbolShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonSymbolShape.swift; sourceTree = "<group>"; };
+		268F53CE2D124CE000C67F42 /* PointedRectangleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointedRectangleShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				268F537F2D11C31C00C67F42 /* SkyrimHobbyCardsApp.swift */,
+				268F53CB2D124C9E00C67F42 /* Model */,
 				268F53852D11C35700C67F42 /* Views */,
 				268F537C2D11C31C00C67F42 /* Preview Content */,
 				268F537D2D11C31C00C67F42 /* Assets.xcassets */,
@@ -76,6 +81,15 @@
 				268F537E2D11C31C00C67F42 /* CardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		268F53CB2D124C9E00C67F42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				268F53CC2D124CB300C67F42 /* DragonSymbolShape.swift */,
+				268F53CE2D124CE000C67F42 /* PointedRectangleShape.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +167,9 @@
 			files = (
 				268F53812D11C31C00C67F42 /* CardView.swift in Sources */,
 				268F53872D11C43D00C67F42 /* CardTabView.swift in Sources */,
+				268F53CD2D124CB300C67F42 /* DragonSymbolShape.swift in Sources */,
 				268F53822D11C31C00C67F42 /* SkyrimHobbyCardsApp.swift in Sources */,
+				268F53CF2D124CE000C67F42 /* PointedRectangleShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
