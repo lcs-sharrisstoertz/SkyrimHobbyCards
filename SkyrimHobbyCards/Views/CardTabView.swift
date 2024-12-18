@@ -12,9 +12,9 @@ struct CardTabView: View {
     var body: some View {
         TabView {
             ForEach(cards) { currentCard in CardView(providedCard: currentCard)
-                }
+            }
         }
-        ignoresSafeArea()
+        .ignoresSafeArea()
             .tabViewStyle(.page(indexDisplayMode: .never))
             .persistentSystemOverlays(.hidden)
     }
