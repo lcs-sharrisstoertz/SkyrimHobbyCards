@@ -17,9 +17,44 @@ struct CardView: View {
             .frame(width: 405, height: 905)
             .scaledToFill()
             .overlay(alignment: .center) {
+                // White lines
                 Rectangle()
-                    .frame(width: 370, height: 725)
-                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+                .fill(.white)
+                .frame(width: 5, height: 905)
+                .padding(EdgeInsets(top: 0, leading: 230, bottom: 0, trailing: 0))
+                Rectangle()
+                .fill(.white)
+                .frame(width: 5, height: 905)
+                .padding(EdgeInsets(top: 0, leading: 300, bottom: 0, trailing: 0))
+                Rectangle()
+                .fill(.white)
+                .frame(width: 5, height: 905)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 230))
+                Rectangle()
+                .fill(.white)
+                .frame(width: 5, height: 905)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 300))
+                Rectangle()
+                .fill(.white)
+                .frame(width: 5, height: 905)
+                .padding(EdgeInsets(top: 0, leading: 230, bottom: 0, trailing: 0))
+                .rotationEffect(Angle(degrees: 90))
+                Rectangle()
+                .fill(.white)
+                .frame(width: 5, height: 905)
+                .padding(EdgeInsets(top: 0, leading: 300, bottom: 0, trailing: 0))
+                .rotationEffect(Angle(degrees: 90))
+                Rectangle()
+                .fill(.white)
+                .frame(width: 5, height: 905)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 230))
+                .rotationEffect(Angle(degrees: 90))
+                Rectangle()
+                .fill(.white)
+                .frame(width: 5, height: 905)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 300))
+                .rotationEffect(Angle(degrees: 90))
+                // Gray gradient
                 LinearGradient (colors: [.darkGray, .gray], startPoint: .top, endPoint: .bottom)
                     .frame(width: 365, height: 720)
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
@@ -111,24 +146,19 @@ struct CardView: View {
                     .frame(width: 125, height: 125)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 685, trailing: 265))
                 
-                Image("ThievesGuildSymbol")
-                    .resizable()
-                    .frame(width: 125, height: 125)
-                    .padding(EdgeInsets(top: 685, leading: 265, bottom: 0, trailing: 0))
-                
                 // Dragon symbol
                 SkyrimLogo()
                     .frame(width: 82, height: 128)
                     .rotationEffect(Angle(degrees: 180))
                     .padding(EdgeInsets(top: 0, leading: 265, bottom: 685, trailing: 0))
                 SkyrimLogo()
-                    .frame(width: 82, height: 128)
+                    .frame(width: 26, height: 49)
                     .rotationEffect(Angle(degrees: 180))
-                    .padding(EdgeInsets(top: 685, leading: 0, bottom: 0, trailing: 265))
-
-                
-                
-                
+                    .padding(EdgeInsets(top: 750, leading: 0, bottom: 0, trailing: 265))
+                SkyrimLogo()
+                    .frame(width: 26, height: 49)
+                    .rotationEffect(Angle(degrees: 180))
+                    .padding(EdgeInsets(top: 750, leading: 265, bottom: 0, trailing: 0))
             }
     }
 }
