@@ -36,7 +36,7 @@ struct CardView: View {
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 100, trailing: 0))
                 // Name
                 PointedRectangleShape()
-                    .fill(.beige)
+                    .fill(.lightGray)
                     .stroke(.darkGray, lineWidth: 5)
                     .frame(width: 400, height: 60)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 686, trailing: 0))
@@ -47,7 +47,7 @@ struct CardView: View {
                 // Race/species
                 PointedRectangleShape()
                     .stroke(.darkGray, lineWidth: 3)
-                    .fill(.beige)
+                    .fill(.lightGray)
                     .frame(width: 200, height: 28)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 593, trailing: 0))
                 Text ("Nord")
@@ -56,17 +56,28 @@ struct CardView: View {
                 
                 // Quests
                 RoundedRectangle(cornerRadius: 20)
-                    .fill(.beige)
+                    .fill(.lightGray)
                     .stroke(.darkGray, lineWidth: 5)
                     .frame(width: 195, height: 175)
                     .padding(EdgeInsets(top: 580, leading: 0, bottom: 0, trailing: 197))
+                Text ("Quests")
+                    .font(.custom("Papyrus", size: 25.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 450, leading: 0, bottom: 0, trailing: 197))
+                Text ("Quests")
+                    .font(.custom("Papyrus", size: 25.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 450, leading: 0, bottom: 0, trailing: 197))
+
                 
                 // Locations
                 RoundedRectangle(cornerRadius: 20)
-                    .fill(.beige)
+                    .fill(.lightGray)
                     .stroke(.darkGray, lineWidth: 5)
                     .frame(width: 195, height: 175)
                     .padding(EdgeInsets(top: 580, leading: 197, bottom: 0, trailing: 0))
+                Text ("Locations")
+                    .font(.custom("Papyrus", size: 25.0, relativeTo: .body))
+                    .padding(EdgeInsets(top: 450, leading: 197, bottom: 0, trailing: 0))
+
                 
                 
                 // Symbol
