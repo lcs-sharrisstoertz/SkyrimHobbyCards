@@ -59,6 +59,9 @@ struct CardView: View {
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 300))
                     .rotationEffect(Angle(degrees: 90))
                 // Gray gradient
+                Rectangle()
+                    .frame(width: 370, height: 725)
+                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
                 LinearGradient (colors: [.darkGray, .gray], startPoint: .top, endPoint: .bottom)
                     .frame(width: 365, height: 720)
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
@@ -150,14 +153,14 @@ struct CardView: View {
                 // Symbol
                 Image(providedCard.symbol)
                     .resizable()
-                    .frame(width: 100, height: 100)
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 685, trailing: 265))
+                    .frame(width: 85, height: 85)
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 685, trailing: 285))
                 
                 // Dragon symbol
                 SkyrimLogo()
-                    .frame(width: 62, height: 108)
+                    .frame(width: 52, height: 98)
                     .rotationEffect(Angle(degrees: 180))
-                    .padding(EdgeInsets(top: 0, leading: 265, bottom: 685, trailing: 0))
+                    .padding(EdgeInsets(top: 0, leading: 285, bottom: 685, trailing: 0))
                 SkyrimLogo()
                     .frame(width: 26, height: 49)
                     .rotationEffect(Angle(degrees: 180))
