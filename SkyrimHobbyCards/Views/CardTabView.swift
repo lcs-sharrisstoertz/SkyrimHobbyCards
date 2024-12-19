@@ -15,8 +15,8 @@ struct CardTabView: View {
             }
         }
         .ignoresSafeArea()
-            .tabViewStyle(.page(indexDisplayMode: .never))
-            .persistentSystemOverlays(.hidden)
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .persistentSystemOverlays(.hidden)
     }
 }
 
